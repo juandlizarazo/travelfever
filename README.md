@@ -7,7 +7,9 @@ We used data  from four sources:
 
 # Methods
 
-* To quantify the current status of disease outbreaks in countries we used the aggregated amount of reports filed by countries to WHO. We then correlated this signal against the aggregated amount of air-travel passengers coming in the same month to the US. Interestingly a small negative correlation was found for most countries, as can be seen in the two figures below. Note that in the barchart the datapoints with zero reports were removed, if they're maintained a similar trend is found by for smaller correlation coefficients.
+* To quantify the current status of disease outbreaks in countries we used the aggregated amount of reports filed by countries to WHO. We then correlated this signal against the aggregated amount of air-travel passengers coming in the same month to the US. Interestingly a small negative correlation was found for most countries, as can be seen in the three figures below. Note that in the barchart the datapoints with zero reports were removed, if they're maintained a similar trend is found by for smaller correlation coefficients.
+
+![Correlation plot for air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Correlation%20China%20into%20the%20US.png?raw=true)
 
 ![Correlation coefficients](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Pearson-r-with-zeros.png)
 
@@ -33,7 +35,7 @@ and also a few notable features for total influx into the US:
 
 ![Total Incoming Air-Travel Passengers into the US](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Total%20travel%20into%20the%20US.png)
 
-![Correlation plot for air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Correlation%20China%20into%20the%20US.png?raw=true)
+
 
 ## Introduction to `src/main.py`
 1) Parsing two excel files `COR Quick Release.xlsx`, `Final COR Port of Entry.xlsx` provided by Fidelity (from NTTO).
