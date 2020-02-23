@@ -1,5 +1,4 @@
-# Travel Fever
-Analysis of trends in travel to the US and disease outbreaks in the world
+# Travel Fever: An Analysis of Trends in Travel to the US and Disease Outbreaks in the World
 
 We used data  from four sources:
 * Using `Beautiful Soup` we scraped data from the WHO website that include news about disease outbreaks. (/data/whodf-dos.pkl)
