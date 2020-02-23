@@ -23,14 +23,15 @@ We used data  from four sources:
 
 [![Visualization of incoming air-travel into the USA](https://img.youtube.com/vi/6OUvG_YInZs/0.jpg)](https://www.youtube.com/watch?v=6OUvG_YInZs&feature=youtu.be)
 
-![Total Incoming Air-Travel Passengers into the US](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Total%20travel%20into%20the%20US.png)
-
-* The traces of amount of passengers flowing from China clearly show seasonal variations and also the effect of the SARS epidemic.
+* The traces of amount of passengers flowing from China clearly show seasonal variations and also the effect of the SARS epidemic,
 
 ![Influx of air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/travel-from-china.png)
 
+and also a few notable features for total influx into the US:
+
+![Total Incoming Air-Travel Passengers into the US](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Total%20travel%20into%20the%20US.png)
+
 ![Correlation plot for air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Correlation%20China%20into%20the%20US.png?raw=true)
-![Total Incoming Air-Travel Passengers into the US per country](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Travel%20into%20the%20US%20per%20country%20of%20origin.png)
 
 ## Introduction to `src/main.py`
 1) Parsing two excel files `COR Quick Release.xlsx`, `Final COR Port of Entry.xlsx` provided by Fidelity (from NTTO).
