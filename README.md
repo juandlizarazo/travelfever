@@ -27,6 +27,8 @@ We used data  from four sources:
 
 * The traces of amount of passengers flowing from China clearly show seasonal variations and also the effect of the SARS epidemic.
 
+![Influx of air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/travel-from-china.png)
+
 ![Correlation plot for air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Correlation%20China%20into%20the%20US.png?raw=true)
 ![Total Incoming Air-Travel Passengers into the US per country](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Travel%20into%20the%20US%20per%20country%20of%20origin.png)
 
