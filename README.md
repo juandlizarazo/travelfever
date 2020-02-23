@@ -5,6 +5,10 @@ We used data  from four sources:
 * Using `Beautiful Soup` we scraped data from the WHO website that include news about disease outbreaks. (/data/whodf-dos.pkl)
 * From the Bureu of Transportation Statistics we got data for flight information for incoming and outgoing air-travel from the US [OST_R | BTS | Transtats](https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=).
 
+# Methods
+
+* To quantify the current status of disease outbreaks in countries we used the aggregated amount of reports filed by them to the WHO. We then correlated this signal agains the aggregated amount of air-travel passengers coming in the same month to the US. Interestingly a small negative correlation was found for most countries.
+
 . description of your methods (feel free to describe anything you tried but abandoned)
 . output, conclusion, result in whatever form
 . explanation of model limitations, assumptions
