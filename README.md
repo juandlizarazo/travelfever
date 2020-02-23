@@ -41,6 +41,10 @@ and also a few notable features for total influx into the US:
 ## Introduction to `src/main.py`
 1) Parsing two excel files `COR Quick Release.xlsx`, `Final COR Port of Entry.xlsx` provided by Fidelity (from NTTO).
 
+*Reference*: `COR Quick Release.xlsx`
+
+![Number of entries per month in 2019 from Japan/China](https://github.com/juandlizarazo/travelfever/blob/master/figs/jn_ch_arrivals.png)
+
 2) Predicting correlation between death toll in the country/area the had severe (more than 100 death tolls a year) epidemic outbreaks and the number of international entries to US.
 
 *Data file*: `sick_people_number.xlsx`, `monthly_arrivals.xlsx`;
