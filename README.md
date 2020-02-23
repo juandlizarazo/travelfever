@@ -1,14 +1,14 @@
 # Travel Fever: An Analysis of Trends in Travel to the US and Disease Outbreaks in the World
 
 We used data  from four sources:
-* Using `Beautiful Soup` we scraped data from the WHO website that include news about disease outbreaks. (/data/whodf-dos.pkl)
+* Using `Beautiful Soup` we scraped data from the WHO website (https://www.who.int/csr/don/en/) that include news about disease outbreaks. (/data/whodf-dos.pkl)
 * From the Bureau of Transportation Statistics we got data for flight information for incoming and outgoing air-travel from the US [OST_R | BTS | Transtats](https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=).
-* https://www.worldometers.info/world-population/
-* The National Travel and Tourism Office. 
+* Some population data was taken from here https://www.worldometers.info/world-population/
+* The National Travel and Tourism Office (https://travel.trade.gov) offers information about travel in the US and we used to provide a coarse descriptive analysis.
 
 # Methods
 
-* To quantify the current status of disease outbreaks in countries we used the aggregated amount of reports filed by countries to WHO. We then correlated this signal against the aggregated amount of air-travel passengers coming in the same month to the US. Interestingly a small negative correlation was found for most countries, as can be seen in the three figures below. Note that in the barchart the datapoints with zero reports were removed, if they're maintained a similar trend is found by for smaller correlation coefficients.
+* To quantify the current status of disease outbreaks in countries we used the aggregated amount of reports filed by countries to WHO. We then correlated this signal against the aggregated amount of air-travel passengers coming in the same month to the US. Interestingly a small negative correlation was found for most countries, as can be seen in the three figures below. (Note that in the barchart the datapoints with zero reports were removed, if they're maintained a similar trend is found by for smaller correlation coefficients.)
 
 ![Correlation plot for air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Correlation%20China%20into%20the%20US.png?raw=true)
 
