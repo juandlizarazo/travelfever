@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import DotProduct, WhiteKernel
 from matplotlib import rc
+import geopandas as gpd
 rc('lines', linewidth=2)
 rc('font', size=18)
 
@@ -69,7 +70,7 @@ def read_port_entry():
         df = df.dropna(axis=0, how='any')
         data_by_year[sheet] = df
 
-    return read_port_entry()
+    return data_by_year
 
 
 def read_volume():
@@ -127,9 +128,33 @@ def read_other_disease():
     plt.savefig('../figs/death_entry_prediction.png')
     plt.show()
 
+
+def parse_ports_entry():
+    data_by_year = read_port_entry()
+    keys = list(data_by_year.keys())
+    df = data_by_year[keys[0]].iloc[:, 1:10]
+    col = list(df.columns)
+    col[0] = 'state'
+    df.columns=col
+    s = df.state
+    df.state = df['state'].apply(lambda x: x.split(',')[-1].strip())
+    entry = df.groupby('state', as_index=False).sum()
+    
+    usa = gpd.read_file('../data/states/states.shp')
+    pd_usa = pd.DataFrame(usa)
+    pd_col = list(pd_usa.columns)
+    pd_usa.columns = ["state" if x == "STATE_ABBR" else x for x in pd_col]
+    merged = pd.merge(how='outer', left=pd_usa, right=entry, left_on='state', right_on='state')
+    merged = merged.iloc[:51]
+    merged = merged.fillna(0)
+    merged.columns = [str(x) for x in list(merged.columns)]
+    merged = gpd.GeoDataFrame(merged)
+    merged.plot(column='2011.0', legend=True)
+    plt.show()
+
+
 def main():
-    #read_other_disease()
-    parse_quick_release()
+    parse_ports_entry()
 
 
 if __name__ == "__main__":
