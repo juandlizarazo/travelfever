@@ -11,8 +11,13 @@ We used data  from four sources:
 
 [![Visualization of incoming air-travel into the USA](https://img.youtube.com/vi/6OUvG_YInZs/0.jpg)](https://www.youtube.com/watch?v=6OUvG_YInZs&feature=youtu.be)
 
-![The Ebola Outbreak from 2013](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Ebola%20Outbreak%20of%202013.png)
-![Correlation between air-travel passengers and disease outbreak reports submitted to WHO](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20histogram%20of%20r%20with%20no%20zeros.png)
+
+https://github.com/juandlizarazo/travelfever/blob/master/figs/Travel%20to%20the%20US%20-%20Total.png
+
+![Travel to the US based on data from the National Travel and Tourism Office](https://github.com/juandlizarazo/travelfever/blob/master/figs/Travel%20to%20the%20US%20-%20Total.png)
+![Correlation between air-travel passengers and disease outbreak reports submitted to WHO]
+
+(https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20histogram%20of%20r%20with%20no%20zeros.png)
 ![Total Incoming Air-Travel Passengers into the US](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Total%20travel%20into%20the%20US.png)
 ![Correlation plot for air-travel from China](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Correlation%20China%20into%20the%20US.png?raw=true)
 ![Total Incoming Air-Travel Passengers into the US per country](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Travel%20into%20the%20US%20per%20country%20of%20origin.png)
