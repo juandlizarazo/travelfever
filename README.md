@@ -3,6 +3,8 @@
 We used data  from four sources:
 * Using `Beautiful Soup` we scraped data from the WHO website that include news about disease outbreaks. (/data/whodf-dos.pkl)
 * From the Bureau of Transportation Statistics we got data for flight information for incoming and outgoing air-travel from the US [OST_R | BTS | Transtats](https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=).
+* https://www.worldometers.info/world-population/
+* The National Travel and Tourism Office. 
 
 # Methods
 
