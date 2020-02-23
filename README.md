@@ -13,9 +13,15 @@ Analysis of trends in travel to the US and disease outbreaks in the world
 ![Total Incoming Air-Travel Passengers into the US per country](https://github.com/juandlizarazo/travelfever/blob/master/figs/Final%20-%20Travel%20into%20the%20US%20per%20country%20of%20origin.png)
 
 ## Introduction to `src/main.py`
-1) Parsing two excel files provided by Fidelity (from NTTO).
+1) Parsing two excel files `COR Quick Release.xlsx`, `Final COR Port of Entry.xlsx` provided by Fidelity (from NTTO).
 
-2) Predicting correlation between death toll in the country/area the had severe (more than 100 death tolls a year) epidemic outbreaks and the number of international entries to US, using Gaussian Process Regression.
+2) Predicting correlation between death toll in the country/area the had severe (more than 100 death tolls a year) epidemic outbreaks and the number of international entries to US.
+*Data file*: `sick_people_number.xlsx`, `monthly_arrivals.xlsx`;
+
+*Machine learning algorithm*: Gaussian Process Regression;
+
+*Data resources*: https://www.worldometers.info/world-population/ and NTTO.
+
 ![Death toll in epidemic outbreak country/area versus Number of international entries to US](https://github.com/juandlizarazo/travelfever/blob/master/figs/death_entry_prediction.png)
 
 
