@@ -19,6 +19,7 @@ We used data  from four sources:
 1) Parsing two excel files `COR Quick Release.xlsx`, `Final COR Port of Entry.xlsx` provided by Fidelity (from NTTO).
 
 2) Predicting correlation between death toll in the country/area the had severe (more than 100 death tolls a year) epidemic outbreaks and the number of international entries to US.
+
 *Data file*: `sick_people_number.xlsx`, `monthly_arrivals.xlsx`;
 
 *Machine learning algorithm*: Gaussian Process Regression;

@@ -26,7 +26,7 @@ def read_quick_release():
         subdf.append(newdf)
 
         newdf = df[col_names[9:13]]
-        newdf = newdf.iloc[2:]
+        newdf = newdf.iloc[1:]
         newdf.columns = ['country', 'population', 'change', 'rank']
         subdf.append(newdf)
 
@@ -36,6 +36,24 @@ def read_quick_release():
         subdf.append(newdf)
         data_by_month[sheet] = subdf
     return data_by_month
+
+def parse_quick_release():
+    data_by_month = read_quick_release()
+    china, japan = [], []
+    for key in data_by_month.keys():
+        df = data_by_month[key][1]
+    #    print(df)
+        china.append(df[df['country'] == 'CHINA, PRC']['population'].to_numpy())
+        japan.append(df[df['country'] == 'JAPAN']['population'].to_numpy())
+    plt.plot(np.arange(1, 12,1), china, 'r', marker='o', label='China, PRC')
+    plt.plot(np.arange(1, 12,1), japan, 'k', marker='d', label='Japan')
+    plt.ylim([1e4, 5e5])
+    plt.tight_layout()
+    plt.legend()
+    plt.xlabel('Month')
+    plt.ylabel('Number of arrivals')
+    plt.savefig('../figs/jn_ch_arrivals.png')
+    plt.show()
 
 def read_port_entry():
     xl = pd.ExcelFile("../US_arrivals_data/Final COR Port of Entry.xlsx")
@@ -110,7 +128,8 @@ def read_other_disease():
     plt.show()
 
 def main():
-    read_other_disease()
+    #read_other_disease()
+    parse_quick_release()
 
 
 if __name__ == "__main__":
