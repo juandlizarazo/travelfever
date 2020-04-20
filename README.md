@@ -24,10 +24,6 @@ We used data  from four sources:
 
 ![Travel to the US based on data from the National Travel and Tourism Office](https://github.com/juandlizarazo/travelfever/blob/master/figs/Travel%20to%20the%20US%20-%20Total.png)
 
-. description of your methods (feel free to describe anything you tried but abandoned)
-. output, conclusion, result in whatever form
-. explanation of model limitations, assumptions
-
 * To visualize the rich data that we found for air-travel we made a video to show the changing pattern of travel into the us. And with a greater resolution than was possible with the data from the Tourism Office we again explored the influx from several countries.
 
 [![Visualization of incoming air-travel into the USA](https://img.youtube.com/vi/6OUvG_YInZs/0.jpg)](https://www.youtube.com/watch?v=6OUvG_YInZs&feature=youtu.be)
